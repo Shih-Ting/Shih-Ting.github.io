@@ -1,0 +1,54 @@
+@media only screen and (max-width: 650px){
+	.top-nav ul li, .menu-icon{
+		display: inline-block;
+		margin-left: auto;
+		border-top:1px solid #FF0000;
+	}
+
+	.top-nav ul{
+		text-align: center;
+	}
+	#item3, #item4{
+		width: 47%;
+		display: inline-block;
+	}
+
+}
+@media only screen and (min-width: 1000px){
+	.logo{
+		float: left;
+		height: 70%;
+	}
+	.top-nav ul li, .menu-icon{
+		display: inline-block;
+		border-top: none;
+	}
+
+	#top-nav {
+ 		display: flex;
+ 		align-items: center;
+	}
+
+	#menu{
+		float: right;
+		text-align: right;
+		width: auto;
+		position: absolute;
+		right: 0px;
+	}
+
+	.top-nav .logo{
+		float:left;
+	}
+
+	.photo-cell{
+		width: 45%;
+		display: inline-block;
+	}
+	#item3, #item4{
+		width:21.25%;
+		display: inline-block;
+	}
+
+
+}
