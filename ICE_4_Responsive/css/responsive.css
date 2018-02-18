@@ -2,12 +2,24 @@
 	.top-nav ul li, .menu-icon{
 		display: inline-block;
 		margin-left: auto;
-		border-top:1px solid #FF0000;
+		border-top: none; /*1px solid #FF0000*/
 	}
 
 	.top-nav ul{
 		text-align: center;
+		/*border-top: 1px red solid;*/
+		top: 60%;
 	}
+
+	.top-nav ul:before{
+		content:'';
+		display: block;
+		margin: 0 auto;
+  		width:90%; 
+  		padding-top: 1px;
+  		border-top: 1px red solid;
+	}
+
 	#item3, #item4{
 		width: 47%;
 		display: inline-block;
