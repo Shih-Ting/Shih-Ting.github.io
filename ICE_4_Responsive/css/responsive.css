@@ -1,4 +1,4 @@
-@media only screen and (max-width: 650px){
+@media only screen and (min-width: 650px) and (max-width: 1000px){
 	.top-nav ul li, .menu-icon{
 		display: inline-block;
 		margin-left: auto;
@@ -15,7 +15,7 @@
 		content:'';
 		display: block;
 		margin: 0 auto;
-  		width:90%; 
+  		width:80%; 
   		padding-top: 1px;
   		border-top: 1px red solid;
 	}
@@ -35,6 +35,8 @@
 		display: inline-block;
 		border-top: none;
 	}
+
+
 
 	#top-nav {
  		display: flex;
