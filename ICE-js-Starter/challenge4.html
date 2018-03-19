@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Challenge 4</title>
+    <link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet'>
+    <style>
+    .errormsg { 
+        /*font: Use a cool Google font*/
+        font-family: "Alice";
+    	color:red;
+    	display:none; } 
+    </style>
+    
+    <script type="text/javascript">
+    function checkForm(){
+        // Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
+        // The 2 options should have the same id
+        //if len of string in box == 0; you have to hint the use to go  back
+
+        var n = document.getElementById("fullname").value;
+        var sa = document.getElementById("streetaddr").value;
+        var n_err = document.getElementById("nameerrormsg");
+        var sa_err = document.getElementById("addrerrormsg");
+        // if n is 0, then block,
+        // else, none
+        
+        if (n.length == 0){
+            n_err.style.display = "block";
+        } else {
+            n_err.style.display = "none";
+        }
+
+        // if sa is 0, then block
+        // else, none
+        if (sa.length == 0){
+            sa_err.style.display = "block";
+        } else {
+            sa_err.style.display = "none";
+        }
+
+        // if n is not 0 and sa is not 0, return true
+        if (n.length !== 0 && sa.length !== 0){
+            return true;
+        }
+
+        // return false
+        return false;
+
+        //It's not recommended to chain them together because once an if statement is triggered, it will only be triggered once and we cannot change it.
+
+        // if ((n.length == 0) && (sa.length == 0)){
+        //     n_err.style.display = "block";
+        //     sa_err.style.display = "block";
+        //     // return false;
+        // } else if (n.length == 0) {
+        //     n_err.style.display = "block";
+        //     // return false;
+        // } else if (sa.length == 0){
+        //     sa_err.style.display = "block";
+        //     // return false;
+        // } else if (n.length !== 0){
+        //     n_err.style.display = "none";
+        //     return true;
+        // } else if (sa.length !== 0){
+        //     sa_err.style.display = "none";
+        //     return true;
+        // }
+        // else{
+        //     return true;
+        // }
+        // return false;
+    }
+        // if (n==""){
+        //     alert(n_err);
+        //     return false;
+        // }
+        // else if (sa==""){
+        //     alert(sa_err);
+        //     return false;
+
+        // }
+        // else
+        //     return true;
+    	
+    </script>
+</head>
+<body>
+    <h1>Challenge 4</h1>
+	<form action="challenge5.html" onsubmit="return checkForm()">
+        <fieldset>
+        <legend>Personal details</legend>
+          <label for="fullname">Full name: </label>
+            <input type="text" name="fullname" id="fullname"><br/>
+            <p class="errormsg" id="nameerrormsg">Please enter your name above!</p>
+
+          <label for ="streetaddr"></label>
+            Street Address:
+            <input type="text" name="streetaddr" id="streetaddr">
+            <p class="errormsg" id="addrerrormsg">Please enter your street address!</p>
+        </fieldset>
+        <input type="submit" value="Submit it!"> 
+    </form>
+</body>
+</html>
