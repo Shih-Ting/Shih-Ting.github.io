@@ -2,14 +2,24 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript">
+			function hide(){
+				var h = document.getElementById("hide");
+				h.style.visibility="hidden";
+			}
+			function center(){
+				var c = document.getElementById("center");
+				c.style.display="center";
+			}
+		</script>
 	</head>
 	<body>
 		<h1>Shih-Ting Lin</h1>
 		<div class="images">
-			<img src="images/examPic.JPG" alt="pic1">
-			<img src="images/UMSI-logo.jpg" alt="pic2">
+			<img class="left" id="hide" src="images/examPic.JPG" alt="pic1">
+			<img class="right" id="center" src="images/UMSI-logo.jpg" alt="pic2">
 		</div>
-		<button type="button">Hide Image</button>
-		<button type="button">Show Image</button>
+		<button type="button" onclick="hide()">Hide Image</button>
+		<button type="button" id="show" onclick="center()">Show Image</button>
 	</body>
 </html>

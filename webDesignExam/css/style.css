@@ -1,11 +1,36 @@
+/*html{
+	margin: 0%;
+	width: 100%;
+}*/
+
+h1{
+	font-weight: bold;
+}
+
 .images{
 	width: 100%;
-	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	padding: 0%;
 }
 
 img{
 	border: 5px solid blue;
+	display: inline-block;
 	padding: 5%;
-	width: 50%;
+	max-width: 50%;
+	margin: 0%;
 }
 
+.left{
+	display: inline-block;
+}
+
+.right{
+	display: absolute;
+}
+
+body{
+	background-image: url("../images/bg.png");
+	width: 100%;
+}
