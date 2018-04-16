@@ -12,6 +12,16 @@
 					h.style.display="none";
 				}
 			}
+
+			function show(){
+				var h = document.getElementById("hide");
+				var c = document.getElementById("center");
+				if(h.style.display =="none"){
+					h.style.display="block";
+				} else{
+					h.style.display="block";
+				}	
+			}
 			// function center(){
 			// 	var c = document.getElementById("center");
 			// 	c.style.display="center";
@@ -25,6 +35,6 @@
 			<img class="right" id="center" src="images/UMSI-logo.jpg" alt="pic2">
 		</div>
 		<button type="button" onclick="hide()">Hide Image</button>
-		<button type="button" id="show" onclick="center()">Show Image</button>
+		<button type="button" id="show" onclick="show()">Show Image</button>
 	</body>
 </html>

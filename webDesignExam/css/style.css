@@ -23,11 +23,11 @@ img{
 }
 
 .left{
-	display: inline-block;
+	display: block;
 }
 
 .right{
-	display: absolute;
+	display: block;
 }
 
 body{
