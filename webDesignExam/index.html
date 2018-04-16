@@ -5,12 +5,17 @@
 		<script type="text/javascript">
 			function hide(){
 				var h = document.getElementById("hide");
-				h.style.visibility="hidden";
-			}
-			function center(){
 				var c = document.getElementById("center");
-				c.style.display="center";
+				if(h.style.display =="none"){
+					c.style.display="block";
+				} else{
+					h.style.display="none";
+				}
 			}
+			// function center(){
+			// 	var c = document.getElementById("center");
+			// 	c.style.display="center";
+			// }
 		</script>
 	</head>
 	<body>
