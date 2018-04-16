@@ -1,36 +1,62 @@
-/*html{
+html{
 	margin: 0%;
 	width: 100%;
-}*/
+}
 
 h1{
 	font-weight: bold;
 }
+
+/*.images{
+	width: 100%;
+	display: inline-block;
+}
+
+img{
+	border: 5px solid blue;
+	padding: 5%;
+	width: 50%;
+}*/
+
+div{
+	display: inline-block;
+}
+
 
 .images{
 	width: 100%;
 	position: relative;
 	overflow: hidden;
 	padding: 0%;
+	margin: auto;
 }
 
 img{
 	border: 5px solid blue;
-	display: inline-block;
+	display: flex;
+	flex-direction: row;
 	padding: 5%;
-	max-width: 50%;
+	width: 50%;
 	margin: 0%;
 }
 
 .left{
-	display: block;
+	display: inline-block;
 }
 
-.right{
-	display: block;
-}
+/*.right{
+	display: inline-block;
+}*/
 
 body{
 	background-image: url("../images/bg.png");
 	width: 100%;
 }
+
+
+@media query (min-width:)
+
+
+
+
+
