@@ -33,8 +33,7 @@ div{
 
 img{
 	border: 5px solid blue;
-	display: flex;
-	flex-direction: row;
+	display: inline-block;
 	padding: 5%;
 	width: 50%;
 	margin: 0%;
@@ -54,7 +53,12 @@ body{
 }
 
 
-@media query (min-width:)
+@media only screen and (min-width: 1200px){
+	img{
+		display: flex;
+		flex-direction: row;
+	}
+}
 
 
 
